@@ -129,7 +129,12 @@ const copythat = () => {
         
   <div style=" padding:30px;">
     <a-card class="card "  :bordered="true" headStyle="T">
-      <h1>唯灵の随机数生成器</h1>
+      <h1 style="margin-bottom:0px">唯灵の随机数生成器</h1>
+      <p style="color:white;margin:0px">喜欢可以在B站点下关注哟~</p>
+      <a href="https://space.bilibili.com/1823778" target="_blank">B站主页 </a>
+      <a href="https://github.com/wierli/wierli_RandomGenerater/tree/master" target="_blank"> Github仓库</a>
+      <br><br>
+      
       
       <a-input :value="start" @change="changestart($event)" placeholder="请输入最小值" addonBefore="最小值" defaultValue="1" style="width: 200px;" />
       <br><br>
