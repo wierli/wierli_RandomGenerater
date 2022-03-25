@@ -121,8 +121,9 @@ const copythat = () => {
 
 
 <template>
-
+<a href="https://space.bilibili.com/1823778" target="_blank">
   <img class="headshot" alt="headshot" src="./assets/headshot.jpg" />
+</a>
      
   <a-row>
       <a-col :span="12" :offset="6" type="flex" justify="center" align="center">
