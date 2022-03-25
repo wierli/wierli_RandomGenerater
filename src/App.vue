@@ -199,7 +199,7 @@ body{
   background-size: auto auto;
   background-position: center center;
   animation: bg 65s linear infinite;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 @keyframes bg {
   0% {
