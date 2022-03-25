@@ -14,40 +14,30 @@ let NumberRegExp= /^(0|\+?[1-9][0-9]*)$/
 
 
 const changestart = (e) => {
-  if(NumberRegExp.test(start.value) == false){
-    message.error('最小值请输入正整数');
-    return
-  }
   start.value=e.currentTarget.value
   console.log(start.value)
-  
-
 }
 
 const changeend = (e) => {
-  if(NumberRegExp.test(end.value) == false){
-    message.error('最大值请输入正整数');
-    return
-  }
   end.value = e.currentTarget.value
   console.log(end.value)
-  
 }
 
 const changecount = (e) => {
-  if(NumberRegExp.test(count.value) == false){
-    message.error('生成个数请输入正整数');
-    return
-  }
   count.value = e.currentTarget.value
   console.log(count.value)
-  
 }
 
 const shengcheng = () => {
+  
   var s = parseInt(start.value)
   var e = parseInt(end.value)
   var c = parseInt(count.value)
+  console.log(s)
+  if(isNaN(s) || isNaN(e) || isNaN(c)){
+    message.error('输入框均不能为空');
+    return
+  }
   if (c>100){
     message.error('生成个数不能超过100个');
     return
@@ -61,11 +51,11 @@ const shengcheng = () => {
     return
   }
  
-   if(NumberRegExp.test(start.value) == false){
+  if(NumberRegExp.test(start.value) == false){
     message.error('最小值请输入正整数');
     return
   }
-   if(NumberRegExp.test(end.value) == false){
+  if(NumberRegExp.test(end.value) == false){
     message.error('最大值请输入正整数');
     return
   }
