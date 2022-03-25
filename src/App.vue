@@ -10,6 +10,8 @@ let start= ref(1)
 let end = ref(100)
 let count = ref(1)
 let suijishu = ref([0])
+let bilibili_addr = ref("https://space.bilibili.com/1823778")
+let github_addr = ref("https://github.com/wierli/wierli_RandomGenerater/tree/master")
 let NumberRegExp= /^(0|\+?[1-9][0-9]*)$/
 
 
@@ -111,7 +113,7 @@ const copythat = () => {
 
 
 <template>
-<a href="https://space.bilibili.com/1823778" target="_blank">
+<a :href="bilibili_addr" target="_blank">
   <img class="headshot" alt="headshot" src="./assets/headshot.jpg" />
 </a>
      
@@ -122,8 +124,8 @@ const copythat = () => {
     <a-card class="card "  :bordered="true" headStyle="T">
       <h1 style="margin-bottom:0px">唯灵の随机数生成器</h1>
       <p style="color:white;margin:0px">喜欢可以在B站点下关注哟~</p>
-      <a href="https://space.bilibili.com/1823778" target="_blank">B站主页 </a>
-      <a href="https://github.com/wierli/wierli_RandomGenerater/tree/master" target="_blank"> Github仓库</a>
+      <a :href="bilibili_addr" target="_blank">B站主页 </a>
+      <a :href="github_addr" target="_blank"> Github仓库</a>
       <br><br>
       
       
