@@ -1,6 +1,6 @@
 version: "2.0"
 services:
-  web1: # 前端node容器(运行nginx中的Vue项目)
+  random: # 前端node容器(运行nginx中的Vue项目)
     container_name: wierlirandom # 容器名为''
     build:
       context: ./ # 指定设定上下文根目录，然后以该目录为准指定Dockerfile
