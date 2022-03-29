@@ -1,3 +1,4 @@
+![image](https://github.com/wierli/wierli_RandomGenerater/blob/master/src/assets/logo.jpg)
 # USE Vue 3 + Vite + AntDesign
 
 docker-compose一键启动
