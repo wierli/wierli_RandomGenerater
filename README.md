@@ -6,4 +6,7 @@ docker-compose一键启动
 docker-compose up -d
 ``
 
-访问 http://127.0.0.1:7788
+部署后访问http://127.0.0.1:7788
+
+在线演示
+https://wierlirandom.netlify.app
